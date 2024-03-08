@@ -57,11 +57,17 @@
             </div>
             <canvas id="canvas" width="1100" height="680"></canvas>
         </div>
-    	<audio controls autoplay> 
-	<source src="./music/I-Do-911.mp3" type="audio/mpeg"> Trình duyệt của bạn không hỗ trợ nguồn âm thanh. 				</audio>
+    	<audio id="backgroundMusic" loop autoplay>
+	        <source src="./music/I-Do-911.mp3"> Trình duyệt của bạn không hỗ trợ nguồn âm thanh.
+        </audio>
     </div>
 
+    <!-- JavaScript to play music -->
     <script>
+        document.getElementById('canvas').addEventListener('click', function() {
+            var audio = document.getElementById('backgroundMusic');
+            audio.play();
+        });
     </script>
 
     <script>
@@ -225,5 +231,4 @@
         })();
     </script>
 </body>
-
 </html>

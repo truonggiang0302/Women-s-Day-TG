@@ -177,7 +177,8 @@
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "12px 微软雅黑,Verdana";
-            ctx.fillText("Come Baby", 23, 10);
+            ctx.fillText("Click Vào", 23, 0);
+            ctx.fillText("Đây Nhé", 28, 15);
             ctx.restore();
         },
         clear: function() {
